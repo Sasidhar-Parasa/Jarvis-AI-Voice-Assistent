@@ -58,8 +58,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login('sasidharparasa337@gmail.com', '9491730941')
-    server.sendmail('sasidharparasa337@gmail.com', to, content)
+    server.login('your mail ID', 'Password')
+    server.sendmail('your mail ID', to, content)
     server.close()
 
 
@@ -107,12 +107,12 @@ if __name__ == "__main__":
             stringTime = datetime.datetime.now() .strftime("%H:%M:%S")
             speak(f'The time is {stringTime}')
 
-        elif 'open movies' in query:
-            vscodePath = ""
+        elif 'open code' in query:
+            vscodePath = "C:\\Users\\psava\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(vscodePath)
 
-        elif 'open watsapp' in query:
-            intellijPath = ""
+        elif 'open java' in query:
+            intellijPath = "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.1\\bin\\idea64.exe"
             os.startfile(intellijPath)
 
         elif 'open pycharm' in query:
